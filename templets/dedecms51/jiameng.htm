@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+<meta name="viewport" content="width=1024" />
+<meta name="keywords"  content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<script type="text/javascript" src="/dedecms51/style/DOMAssistantCompressed-2.8.1.js"></script>
+<script type="text/javascript" src="/dedecms51/style/ie-css3.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/dedecms51/style/style.css" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dedecms51/style/html5.js"></script>
+	<![endif]-->
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+    <body>
+<div class="theblankblock"></div>
+ <header >
+	<div class="headtop">
+		{dede:include filename="head.htm"/}
+	</div>
+	{dede:include filename="head2.htm"/}
+</header><section id="insbanner" ><img src="/dedecms51/images/insbanner.jpg" alt="" />
+<div class="wp"><h2>{dede:field.typename/}</h2>
+	<div class="ent">Join</div>
+</div>
+</section><section class="pratmethod jiameng wp">
+	<h4>加盟政策</h4>
+	<div class="detals">
+	<br />
+    {dede:field.content/}
+  	</div>
+	
+</section>
+<section class="process jiameng ">
+	<div class="wp"><h4>加盟流程</h4>
+	<br />
+	<img src="/dedecms51/images/jiamengliucheng.png" alt="" />
+ </div>
+	
+</section>
+<section class="formapp jiameng ">
+	<div class="wp"><h4>在线加盟</h4>
+<form action="/plus/diy.php" enctype="multipart/form-data" method="post">
+<input type="hidden" name="action" value="post" />
+<input type="hidden" name="diyid" value="1" />
+<input type="hidden" name="do" value="2" />
+				<ul class="msgHod clearfix">
+					<li>
+						<div class="qsTion">姓名：</div>
+						<div class="name"><input type='text' name='name' id='name' style='width:250px'  class='intxt' value='' /><span>(必填)</span></div>
+					</li>
+					<li>
+						<div class="qsTion">电话：</div>
+						<div class="phone"><input type='text' name='phone' id='phone' style='width:250px'  class='intxt' value='' /><span>(必填)</span></div>
+					</li>
+					<li>
+						<div class="qsTion">邮箱：</div>
+						<div class="mail"><input type='text' name='mail' id='mail' style='width:250px'  class='intxt' value='' /><span>(必填)</span></div>
+					</li>
+					<li>
+						<div class="qsTion">地址： </div>
+						<div class="them"><input type='text' name='address' id='address' style='width:250px'  class='intxt' value='' />
+<span>(必填)</span></div>
+					</li>
+				</ul>
+				
+				<div class="txra clearfix">
+					<div class="qsTion fl">留言:</div>
+					<textarea name='content' id='content' style='width:90%;height:80'></textarea>
+					<div class="chex ">(必填)</div>
+				</div>
+				<div class="handon clearfloat">
+				 <input type="hidden" name="dede_fields" value="name,text;phone,text;mail,text;address,text;content,multitext" />
+<input type="hidden" name="dede_fieldshash" value="11a7a1cc0c4d68bf4fe496a5839bf9e3" />
+<input type="submit" name="submit" value="提 交" class='coolbg' />
+				</div>
+			</form>
+
+
+
+ </div>
+	
+</section>
+
+<br /><br /><br /><br />
+<footer >
+		{dede:include filename="footer.htm"/}
+</footer>
+<script type="text/javascript" src="/dedecms51/style/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/dedecms51/style/easing.js"></script>
+<script type="text/javascript" src="/dedecms51/style/lazyload.js"></script>
+<script type="text/javascript">
+//导航
+$("nav li").hover(function(){
+	$("i",this).addClass("hover");
+	
+},function(){
+	$("i",this).removeClass("hover");
+})
+	
+   
+	$(window).scroll(function(){
+	
+		  var stp=$(window).scrollTop();
+			if(stp==0){
+				$(".theblankblock").height(0);
+				$("#submen").addClass("nofix").css({"top":401})
+					$("header").stop(true,false).css({"top":0})
+					$("header").removeClass("fix").removeClass("aboutheader")
+			}
+			else if(stp>0){
+				$(".theblankblock").height(145);
+				$("#submen").removeClass("nofix").css({"top":64})
+				$("header").stop(true,false).css({"top":-55})
+				$("header").addClass("fix").addClass("aboutheader")
+			}
+		})
+		
+ 	
+	
+	
+	
+	
+
+</script><script type="text/javascript">
+$("header").addClass("boxshadow");
+//验证!--...-
+	function phone(phonVlu){																	//电话验证
+		var filter  = /^1[0-9]{10}$/;
+		var filte2	=/^(([0\+]\d{2,3}-)?(0\d{2,3})-)?(\d{7,8})(-(\d{3,}))?$/;
+		return filter.test(phonVlu) || filte2.test(phonVlu);
+	}
+			
+	function regName(nameVlu){ 																	//名称验证
+			var filter  = /^([\u4e00-\u9fa5]+|[a-zA-Z0-9]+)$/;
+			var ls=filter.test(nameVlu);
+			var lj=nameVlu.length>=2;
+		  return (lj&&ls);
+		}
+   function them(themval){
+		var filter=/^[^*$#]+$/;
+		return filter.test(themval);
+   }
+		function regEmail(emailStr)
+     {var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;     //邮箱验证
+       return filter.test(emailStr);
+    }
+
+		
+	function regMsg(msgVlu){                                                                   //信息长度验证
+	  if(msgVlu.length<=10){return false}
+	  else if(msgVlu.length>10)
+	  {return true}
+	}
+
+	$(".name input").blur(function(){
+		var nameval=$(this).val();
+		var p=regName(nameval);
+		if(p==true){
+			$(this).removeClass("erro");
+			$(this).parent().children("span").html("");
+		}else if(nameval==""){
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("不能为空！").css("color","red")
+		}
+		else{
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("姓名格式不正确！").css("color","red")
+			
+		}
+	}).focus(function(){
+		$(this).removeClass("erro");
+		$(this).parent().children("span").html("");
+	})
+
+$(".mail input").blur(function(){
+	var emailStr=($(this).val());
+	var e=regEmail(emailStr);
+		if(e==true){
+			$(this).removeClass("erro");
+			$(this).parent().children("span").html("");
+		}else if(emailStr==""){
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("不能为空！").css("color","red")
+		}
+		else{
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("邮箱地址不正确").css("color","red")
+			
+		}
+	}).focus(function(){
+		$(this).removeClass("erro");
+		$(this).parent().children("span").html("");
+	})
+
+	
+	
+	
+	
+	$(".phone input").blur(function(){
+		var nameval=$(this).val();
+		var g=phone(nameval);
+		if(g==true){
+			$(this).removeClass("erro");
+			$(this).parent().children("span").html("");
+		}else if(nameval==""){
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("不能为空！").css("color","red")
+		}
+		else{
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("电话号码格式不正确！").css("color","red")
+			
+		}
+	}).focus(function(){
+		$(this).removeClass("erro");
+		$(this).parent().children("span").html("");
+	})
+
+		
+	$(".them input").blur(function(){
+		var nameval=$(this).val();
+		var k=them(nameval);
+		if(k==true){
+			$(this).removeClass("erro");
+			$(this).parent().children("span").html("");
+		}else if(nameval==""){
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("不能为空！").css("color","red")
+		}
+		else{
+			$(this).addClass("erro")
+			$(this).parent().children("span").html("请输入正确的地址").css("color","red")
+			
+		}
+	}).focus(function(){
+		$(this).removeClass("erro");
+		$(this).parent().children("span").html("");
+	})
+  
+   
+    $("textarea").blur(function(){
+		var nameval=$(this).val();
+		var u=regMsg(nameval);
+		if(u==true){
+			$(this).removeClass("erro");
+			$(this).parent().children("chex").html("");
+		}else if(nameval==""){
+			$(this).addClass("erro")
+			$(this).parent().children(".chex").html("不能为空！").css("color","red")
+		}
+		else{
+			$(this).addClass("erro")
+			$(this).parent().children(".chex").html("不得少于10个字！").css("color","red")
+			
+		}
+	}).focus(function(){
+		$(this).removeClass("erro");
+		$(this).parent().children(".chex").html("");
+	})
+  
+	$(".handon input").click(function(){
+		$(".name input").blur();
+		$(".mail input").blur();
+		$(".them input").blur();
+		$(".phone input").blur();
+		$("textarea").blur();
+	   var k=$(".name input").attr("class");
+	   var l=$(".them input").attr("class");
+	   var j=$(".phone input").attr("class");
+	   var y=$("textarea").attr("class");
+		 var c=$(".mail").attr("class");
+
+	})
+	
+		
+	
+</script>
+</body>
+</html>
+<!-- 2014-5-11 -->

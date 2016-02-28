@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("field","",199,221);
+$z[0][4]['name']="keywords";
+$z[1]=Array("field","",261,313);
+$z[1][4]['name']="description";
+$z[1][4]['function']="html2text(@me)";
+$z[2]=Array("field","",738,757);
+$z[2][4]['name']="title";
+$z[3]=Array("global","",758,784);
+$z[3][4]['name']="cfg_webname";
+$z[4]=Array("include","",888,923);
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("include","",935,971);
+$z[5][4]['filename']="head2.htm";
+$z[6]=Array("channel","\r\n<li><a href='[field:typelink/]'>[field:typename/]</a> </li>\r\n",1093,1281);
+$z[6][4]['typeid']="2";
+$z[6][4]['row']="8";
+$z[6][4]['currentstyle']="<li class='hover'><a href='~typelink~' >~typename~</a> </li>";
+$z[7]=Array("field","",1554,1574);
+$z[7][4]['name']="litpic";
+$z[8]=Array("field","",1581,1600);
+$z[8][4]['name']="title";
+$z[9]=Array("field","",1790,1810);
+$z[9][4]['name']="litpic";
+$z[10]=Array("field","",1817,1836);
+$z[10][4]['name']="title";
+$z[11]=Array("field","",1947,1966);
+$z[11][4]['name']="title";
+$z[12]=Array("field","",2056,2112);
+$z[12][4]['name']="pubdate";
+$z[12][4]['function']="MyDate('Y-m-d H:i',@me)";
+$z[13]=Array("field","",2221,2248);
+$z[13][4]['name']="phpurl";
+$z[14]=Array("field","",2272,2295);
+$z[14][4]['name']="id";
+$z[15]=Array("field","",2300,2324);
+$z[15][4]['name']="mid";
+$z[16]=Array("field","",2519,2537);
+$z[16][4]['name']="body";
+$z[17]=Array("type","<a class=\"\" href=\"[field:typeurl/]\">返回上级</a>",2668,2754);
+$z[17][4]['typeid']="2";
+$z[18]=Array("include","",2776,2813);
+$z[18][4]['filename']="footer.htm";
+
+?>

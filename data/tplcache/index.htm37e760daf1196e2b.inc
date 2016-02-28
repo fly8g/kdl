@@ -1,0 +1,45 @@
+<?php
+$z[0]=Array("global","",199,226);
+$z[0][4]['name']="cfg_keywords";
+$z[1]=Array("global","",266,296);
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",720,746);
+$z[2][4]['name']="cfg_webname";
+$z[3]=Array("include","",851,886);
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("include","",899,935);
+$z[4][4]['filename']="head2.htm";
+$z[5]=Array("type","<a class=\"more\" href=\"[field:typelink /]\">Read More</a>",1303,1393);
+$z[5][4]['typeid']="18";
+$z[6]=Array("type","<a class=\"more\" href=\"[field:typelink /]\">Read More</a>",1678,1768);
+$z[6][4]['typeid']="19";
+$z[7]=Array("type","<a class=\"more\" href=\"[field:typelink /]\">Read More</a>",2050,2140);
+$z[7][4]['typeid']="21";
+$z[8]=Array("type","<a class=\"more\" href=\"[field:typelink /]\">Read More</a>",2437,2527);
+$z[8][4]['typeid']="22";
+$z[9]=Array("type","<a class=\"more\" href=\"[field:typelink /]\">Read More</a>",2812,2902);
+$z[9][4]['typeid']="20";
+$z[10]=Array("type","<a class=\"more\" href=\"[field:typelink /]\">Read More</a>",3184,3274);
+$z[10][4]['typeid']="23";
+$z[11]=Array("type","<a href=\"[field:typeurl/]\"><img src=\"/dedecms51/images/20140522055219211.png\" alt=\"\" /></a>\r\n				<span>[field:typename/]</span>\r\n			",4366,4533);
+$z[11][4]['typeid']="13";
+$z[12]=Array("type","<a href=\"[field:typeurl/]\"><img src=\"/dedecms51/images/20140523091125830.png\" alt=\"\" /></a>\r\n				<span>[field:typename/]</span>\r\n			",4544,4711);
+$z[12][4]['typeid']="14";
+$z[13]=Array("type","<a href=\"[field:typeurl/]\"><img src=\"/dedecms51/images/20140523091151851.png\" alt=\"\" /></a>\r\n				<span>[field:typename/]</span>\r\n			",4722,4889);
+$z[13][4]['typeid']="15";
+$z[14]=Array("type","<a href=\"[field:typeurl/]\"><img src=\"/dedecms51/images/20140523091213973.png\" alt=\"\" /></a>\r\n				<span>[field:typename/]</span>\r\n			",4900,5067);
+$z[14][4]['typeid']="16";
+$z[15]=Array("type","<a href=\"[field:typeurl/]\"><img src=\"/dedecms51/images/20140523091347781.png\" alt=\"\" /></a>\r\n				<span>[field:typename/]</span>\r\n			",5078,5245);
+$z[15][4]['typeid']="17";
+$z[16]=Array("arclist","\r\n	     	       			<li><a class=\"fangdajing\" href=\"[field:arcurl/]\"><i></i></a>\r\n				<a class=\"beijing\" href=\"[field:arcurl/]\"><i>[field:title/]</i></a>\r\n				<img src=\"[field:litpic/]\" alt=\"\" />\r\n			</li>",8686,8946);
+$z[16][4]['row']="12";
+$z[16][4]['typeid']="4";
+$z[17]=Array("arclist","\r\n				 <li class=\"first\">\r\n				<div class=\"ico\"></div>\r\n				<img src=\"[field:litpic/]\" alt=\"\" />\r\n				<h3><a class=\"\" href=\"[field:arcurl/]\">[field:title/]</a></h3>\r\n				<div class=\"data\">[field:infos/]..</div>\r\n				<a class=\"more\" href=\"[field:arcurl/]\">Read More</a>\r\n			</li>",9357,9714);
+$z[17][4]['row']="3";
+$z[17][4]['typeid']="24";
+$z[17][4]['titlelen']="30";
+$z[17][4]['infolen']="100";
+$z[18]=Array("include","",10330,10367);
+$z[18][4]['filename']="footer.htm";
+
+?>

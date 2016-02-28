@@ -1,0 +1,7 @@
+INSERT INTO `dede_diyform1` VALUES('1','0','','','','','');
+INSERT INTO `dede_diyform1` VALUES('2','0','11','13560341226','13560341226@qq.com','11111','111111111111111111111111111');
+INSERT INTO `dede_diyform1` VALUES('3','0','444','13630064611','444@21cn.com','44','444ffffffffff');
+INSERT INTO `dede_diyform1` VALUES('4','0','444','13630064611','444@21cn.com','44','444ffffffffff');
+INSERT INTO `dede_diyform1` VALUES('5','0','150201','','','','');
+INSERT INTO `dede_diyform1` VALUES('6','0','','15020217966','15020217966@qq.com','','');
+INSERT INTO `dede_diyform1` VALUES('7','0','1111','18688888888','12312312@qq.com','111111','111111111111111111111111111111111111111111111111111111111111111');

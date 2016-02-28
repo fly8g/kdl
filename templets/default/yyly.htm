@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+<meta name="viewport" content="width=1024" />
+<meta name="keywords"  content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description'  function='html2text(@me)'/}" />
+<script type="text/javascript" src="/dedecms51/style/DOMAssistantCompressed-2.8.1.js"></script>
+<script type="text/javascript" src="/dedecms51/style/ie-css3.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/dedecms51/style/style.css" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dedecms51/style/html5.js"></script>
+	<![endif]-->
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+    <body>
+<div class="theblankblock"></div>
+ <header >
+	<div class="headtop">
+				{dede:include filename="head.htm"/}
+	</div>
+	<div class="headmain">
+		{dede:include filename="head2.htm"/}
+	</div>
+</header><section id="insbanner" ><img src="/dedecms51/images/insbanner.jpg" alt="" />
+<div class="wp"><h2>{dede:type typeid='3'}[field:typename /]{/dede:type}</h2>
+	<div class="ent">{dede:type typeid='3'}[field:enwords /]{/dede:type}</div>
+</div>
+</section><section id="submen" class="nofix">
+	<div class="wp">
+		<ul class="clearfix">
+				  		        		
+            {dede:channel typeid ='3' row='8' currentstyle="<li class='hover'><a href='~typelink~' >~typename~</a> </li>"}
+<li><a href='[field:typelink/]'>[field:typename/]</a> </li>
+{/dede:channel}            
+                  		</ul>
+	</div>
+</section><section id="applitit">
+		<div class="wp">
+			<div class="tit clearfix">
+				<img class="titico fl" src="/dedecms51/images/20140513030427493.png" alt="" />
+				<h4 class="fl">{dede:field.typename/}<p class="ent"></p></h4></div>
+			<div class="appdesp">
+				<h5>介绍</h5>
+<p class="deta">{dede:field name='description'  function='html2text(@me)'/}</p>							</div>
+		</div>
+</section>
+	<section class="appdetas wp"><h5>优势</h5>{dede:field.content/}</section>								
+              <section class="relevantcase wp">
+ <h4 class="inside">相关案例</h4>
+  <ul class="clearfix">
+   {dede:arclist  typeid ='4'  row='4' titlelen='16' orderby='rand'}
+                            <li>
+			<img src="[field:picname/]" alt="" />
+			<a class="hover" href="[field:arcurl/]"><span class="dest"><span>[field:title/]</span><span class="more">more<i></i></span></span></a>
+		</li>  
+        
+	    	  {/dede:arclist}
+
+  </ul>
+ 
+</section>
+<br /><br />
+		<footer>
+		{dede:include filename="footer.htm"/}
+</footer>
+<script type="text/javascript" src="/dedecms51/style/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/dedecms51/style/easing.js"></script>
+<script type="text/javascript" src="/dedecms51/style/lazyload.js"></script>
+<script type="text/javascript">
+//导航
+$("nav li").hover(function(){
+	$("i",this).addClass("hover");
+	
+},function(){
+	$("i",this).removeClass("hover");
+})
+	
+   
+	$(window).scroll(function(){
+	
+		  var stp=$(window).scrollTop();
+			if(stp==0){
+				$(".theblankblock").height(0);
+				$("#submen").addClass("nofix").css({"top":401})
+					$("header").stop(true,false).css({"top":0})
+					$("header").removeClass("fix").removeClass("aboutheader")
+			}
+			else if(stp>0){
+				$(".theblankblock").height(145);
+				$("#submen").removeClass("nofix").css({"top":64})
+				$("header").stop(true,false).css({"top":-55})
+				$("header").addClass("fix").addClass("aboutheader")
+			}
+		})
+		
+ 	
+	
+	
+	
+	
+
+</script><script type="text/javascript">
+
+$("#newslist li").hover(function(){
+	$(this).addClass("hover");
+},function(){
+	$(this).removeClass("hover");
+})
+
+$(".relevantcase li").hover(function(){
+	$("a",this).show();
+},function(){
+	$("a",this).hide();
+})
+$(".relevantprod li .more").hover(function(){
+	$(this).addClass("hover");
+},function(){
+	$(this).removeClass("hover");
+})
+		
+	
+</script>
+</body>
+</html>
+<!-- 2014-5-11 -->

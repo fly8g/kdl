@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />   
+<meta name="viewport" content="width=1024" />
+<meta name="keywords"  content="{dede:field.keywords/}" />
+<meta name="description" content="{dede:field.description  function='html2text(@me)'/}" />
+<script type="text/javascript" src="/dedecms51/style/DOMAssistantCompressed-2.8.1.js"></script>
+<script type="text/javascript" src="/dedecms51/style/ie-css3.js"></script>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" href="/dedecms51/style/style.css" />
+<!--[if lt IE 9]>
+	<script type="text/javascript" src="/dedecms51/style/html5.js"></script>
+	<![endif]-->
+<title>{dede:field.title/}-{dede:global.cfg_webname/}</title>
+</head>
+    <body>
+<div class="theblankblock"></div>
+ <header >
+	<div class="headtop">
+		{dede:include filename="head.htm"/}
+	</div>
+	{dede:include filename="head2.htm"/}
+</header><section id="submen" class="nofix">
+	<div class="wp">
+		<ul class="clearfix">
+				  		      		
+            {dede:channel typeid ='2' row='8' currentstyle="<li class='hover'><a href='~typelink~' >~typename~</a> </li>"}
+<li><a href='[field:typelink/]'>[field:typename/]</a> </li>
+{/dede:channel}            
+                  		</ul>
+	</div>
+</section>
+<section id="prinsCont" class="wp">
+	 <div class="prshow">
+		<div class="prshowbox clearfix">
+			<div class="fl">
+				<div class="casewrapper">
+					<ul>
+           <li class="current"><img data-original="{dede:field.litpic/}" alt="{dede:field.title/}" src="/dedecms51/style/images/about_blank.png"  /></li>
+            </ul>
+				</div>
+				<div class="contro">
+					<ul class="clearfix">
+            <!-- <li class="current"><img src="{dede:field.litpic/}" alt="{dede:field.title/}" /></li>-->
+                	</ul>
+				</div>
+			</div>
+			<div class="fr">
+            <div class="tit">{dede:field.title/}</div>
+            <div class="name"><span class="type">时间:</span> <div class="cont">{dede:field.pubdate function="MyDate('Y-m-d H:i',@me)"/}</div></div>
+            <div class="name"><span class="type">点击:</span> <div class="cont"><script src="{dede:field name='phpurl'/}/count.php?view=yes&aid={dede:field name='id'/}&mid={dede:field name='mid'/}" type='text/javascript' language="javascript"></script></div></div>
+            <div class="name"><span class="type">编辑:</span> <div class="cont">{dede:adminname/}</div></div>
+
+
+				 
+			</div>
+		</div>
+	 </div>
+</section>
+	<div class="wp returnpage">
+     {dede:type typeid='2'}<a class="" href="[field:typeurl/]">返回上级</a>{/dede:type}</div>
+
+<footer >
+	{dede:include filename="footer.htm"/}
+</footer>
+<script type="text/javascript" src="/dedecms51/style/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="/dedecms51/style/easing.js"></script>
+<script type="text/javascript" src="/dedecms51/style/lazyload.js"></script>
+<script type="text/javascript">
+//导航
+$("nav li").hover(function(){
+	$("i",this).addClass("hover");
+	
+},function(){
+	$("i",this).removeClass("hover");
+})
+	
+   
+	$(window).scroll(function(){
+	
+		  var stp=$(window).scrollTop();
+			if(stp==0){
+				$(".theblankblock").height(0);
+				$("#submen").addClass("nofix").css({"top":401})
+					$("header").stop(true,false).css({"top":0})
+					$("header").removeClass("fix").removeClass("aboutheader")
+			}
+			else if(stp>0){
+				$(".theblankblock").height(145);
+				$("#submen").removeClass("nofix").css({"top":64})
+				$("header").stop(true,false).css({"top":-55})
+				$("header").addClass("fix").addClass("aboutheader")
+			}
+		})
+		
+ 	
+	
+	
+	
+	
+
+</script><script type="text/javascript">
+//展示图片切换
+	var tindex;
+	$(".contro li").click(function(){
+		if($(this).attr("class")=="current"){
+			return false;
+		}else{
+		tindex=$(this).index();
+		$(".contro li").removeClass("current");
+		$(this).addClass("current");
+	
+		$(".casewrapper ul li").fadeOut(500);
+		$(".casewrapper ul li").eq(tindex).fadeIn(500);
+		}
+	})
+
+$(".relevantcase li").hover(function(){
+	$("a",this).show();
+},function(){
+	$("a",this).hide();
+})
+$(".relevantprod li .more").hover(function(){
+	$(this).addClass("hover");
+},function(){
+	$(this).removeClass("hover");
+})
+//lazyload
+$(".casewrapper img").lazyload({effect:"fadeIn",failurelimit:10});	
+	
+</script>
+</body>
+</html>
