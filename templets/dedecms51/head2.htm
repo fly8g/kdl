@@ -1,11 +1,25 @@
 <div class="headmain">
-		<div class="wp clearfix"><!--123-->
-			<div class="fl logo"><a href="{dede:global.cfg_basehost/}"></a></div>
-			<nav class="fr"><ul class="clearfix">
-				<li><a href="{dede:global.cfg_basehost/}">首页</a></li>
-                {dede:channel type='top' row='6' currentstyle="<li class='current'><a href='~typelink~'>~typename~</a> </li>"}
-                                                               <li><a href='[field:typelink/]'>[field:typename/]</a> </li>
-                {/dede:channel}
-				                 			</ul></nav>
+		<div class="wp clearfix">
+			<!-- <div class="fl logo"><a href="{dede:global.cfg_basehost/}"></a></div> -->
+			<nav class="fr2" id="navMenu1">
+				<ul class="clearfix">
+					<li><a href="{dede:global.cfg_basehost/}">首页</a></li>
+{dede:channel type='top' row='6' currentstyle="<li class='current'><a href='~typelink~' ~rel~>~typename~</a> </li>"}
+					<li><a href='[field:typelink/]' [field:rel/]>[field:typename/]</a>
+					</li>
+{/dede:channel}
+				</ul>
+			</nav>
 		</div>
 	</div>
+
+<!--
+<div id="navMenu">
+<ul>
+<li><a href='{dede:global.cfg_cmsurl/}'><span class='bg_left'>主页</span></a></li>
+{dede:channel type='top' row='8' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span class='bg_left'>~typename~</span></a></li>"}
+<li><a href='[field:typeurl/]' [field:rel/]><span class='bg_left'>[field:typename/]</span></a></li>
+{/dede:channel}
+</ul>
+<div>
+-->

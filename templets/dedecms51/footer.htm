@@ -1,6 +1,23 @@
+<!-- //二级子类下拉菜单，考虑SEO原因放置于底部  -->
+
+<script type='text/javascript' src='{dede:global.cfg_cmsurl/}/dedecms51/style/dropdown.js'></script>
+
+{dede:channelartlist typeid='top' cacheid='channelsonlist'}<ul id="dropmenu{dede:field.typeid/}" class="dropMenu">
+
+  {dede:channel type='son' noself='yes'}  <li><a href="[field:typelink/]">[field:typename/]</a></li>
+
+  {/dede:channel}
+
+</ul>
+
+{/dede:channelartlist}
+
+<script type="text/javascript">cssdropdown.startchrome("navMenu1")</script>
+
+<!-- //底部模板 -->
 	<div class="wp top clearfix">
 		<div class="left fl">
-			<<h3>联系我们<i></i></h3>
+			<h3>联系我们<i></i></h3>
 			<ul>
 				<li class="phn"><i></i>029-83663595</li>
 				<li class="fix"><i></i>400-889-2363</li>
@@ -31,12 +48,8 @@
 </div>
 <div class="bot">
 	<div class="wp clearfix">
-	<span class="fl">Copyright{dede:global.cfg_powerby/}</span>
-
-		<!--
-		<span class="fr" style="padding-left:40px;"><a href="http://meinvshuo.taobao.com/" target="_blank" title="网站建设">网络技术</a>
-		-->
-		<span class="fr">友情链接：<a href="http://xa.51zxdr.com/" target="_blank" title="装修达人">西安装修达人</a>{dede:flink row='4'/}
+	<span class="fl">{dede:global.cfg_powerby/}</span>
+		<span class="fr">友情链接：{dede:flink row='4'/}
      	</span>
 	</div>
 </div>

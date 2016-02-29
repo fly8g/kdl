@@ -25,6 +25,8 @@ a:hover{color: #;}
 .wp{width: 1000px; margin:0 auto;}
 .fl{float:left;}
 .fr{float:right;}
+.fr1{float:right;position:relative;right:13%}
+.fr2{float:left;}
 .clearfix:after{display:block;clear:both;content:"";visibility:hidden;height:0}
 .clearfix{zoom:1}
 /*body*/
@@ -41,14 +43,14 @@ header .headtop .share a:hover{opacity:.8; }
 header .headtop .aoa{padding:0 8px; font-family:arial; width:64px!important; }
 header .headtop .notmsg a{display:inline-block; width:98px; height:32px; border-radius:3px; background:#263139; color:#fff;  text-align:center; line-height:32px; font-size:14px; margin-top:10px; font-family:'微软雅黑';}
 header .headtop .notmsg a:hover{background:#f86c0f;}
-header .headmain{height:90px; width:100%; background:#fff;}
+header .headmain{height:50px; width:100%; background:#fff;}
 header .headmain .fl{margin-top:14px; width:150px; height:70px; background:url(../images/logo.png) no-repeat;}
 header .headmain .fl.logo a{width:100%; height:100%; background:url(about:blank) no-repeat; display:block;}
 header .headmain .wp{height:100%;}
 header .headmain nav{height:100%;}
 header .headmain nav ul{height:100%;}
 header .headmain nav li{float:left; height:100%; width:110px;}
-header .headmain nav li a{display:block; height:100%; width:110px;  font-size:16px; color:#1a2730; text-align:center;line-height:120px; position:relative;}
+header .headmain nav li a{display:block; height:100%; width:110px;  font-size:16px; color:#1a2730; text-align:center;line-height:50px; position:relative;}
 header .headmain nav li.current a{background:#1E8CDA; color:#fff;}
 header .headmain nav li.current a i{background:url(../images/indexIco.png) 0 -133px no-repeat;}
 header .headmain nav li a i{position:absolute;  display:block; width:12px; height:10px;background:url(../images/indexIco.png) 0 -153px no-repeat; bottom:22px; right:4px;}
@@ -234,8 +236,8 @@ font-size: 0;}
 /*内页about页面header*/
 header.aboutheader{position:fixed;z-index:2222; top:0; width:100%;}
 header.aboutheader .headertop{position:fixed; top:0;}
-header.fix .headmain {height:64px; }
-header.fix .headmain  nav li a{line-height:73px;}
+header.fix .headmain {height:50px; }
+header.fix .headmain  nav li a{line-height:50px;}
 header.fix .headmain  nav li a i{bottom:19px;}
 header.fix .headmain .fl{background:url(../images/logofix.png) 0 7px no-repeat;}
 /*产品内页*/
@@ -747,7 +749,9 @@ height: 100%;
 overflow: hidden;
 } 
 #nesmore{width:100%; height:700px; overflow:hidden;} 
- 
- 
- 
- 
+/*-------- 下拉菜单 --------------*/
+.dropMenu {position:fixed;top: 0;z-index:1000;width: 180px;visibility: hidden;margin-top: -1px;border: 1px solid #003366;border-top: 0px solid #3CA2DC; background-color:#FFFFFF;padding-top:6px;padding-bottom:6px;}
+.dropMenu li {margin-top:2px;margin-bottom:4px;padding-left:0px;}
+.dropMenu a {font-size:14px;width: auto;display: block;color:#1a2730;padding: 2px 0 2px 1.2em;}
+* html .dropMenu a {width: 100%;}
+.dropMenu a:hover {background:#1E8CDA; color:#fff;text-decoration:none;}
