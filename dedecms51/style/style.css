@@ -185,7 +185,7 @@ font-size: 0;}
 #insbanner .wp h2{text-align:left; margin-left:280px;line-height:20px; margin-top:80px; }
 #insbanner .wp .ent{margin-left:290px; color:#1E8CDA; font-size: 28px; margin-top: 15px;  font-weight: bold;}
 /*ÄÚÒ³*/
-#submen{width: 100%; height: 44px; background: #1E8CDA; min-width: 1000px; position:fixed;z-index:67; top:401px;}
+#submen{width: 100%; height: 44px; background: #1E8CDA; min-width: 1000px; position:fixed;z-index:67; top:371px;}
 #submen ul li{float: left; height: 44px;}
 #submen ul li a{color: #fff; font-size: 15px; line-height: 44px; margin-right:60px; }
 #submen ul li a:hover{border-bottom: 1px solid #fff;}
