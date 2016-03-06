@@ -16,23 +16,19 @@
 
   
 
-</ul><ul id="dropmenu3" class="dropMenu">
+</ul><ul id="dropmenu30" class="dropMenu">
 
-    <li><a href="http://localhost/solution/warm/">建筑外墙保温领域</a></li>
+    <li><a href="http://localhost/solution/gongzhuang/">工程装修</a></li>
 
-    <li><a href="http://localhost/solution/common/">公共内装领域</a></li>
-
-    <li><a href="http://localhost/solution/family/">家庭装饰领域</a></li>
-
-    <li><a href="http://localhost/solution/ground/">地下空间领域</a></li>
-
-    <li><a href="http://localhost/solution/steelwork/">钢结构建筑外围护领域</a></li>
-
-    <li><a href="http://localhost/solution/clean/">洁净房领域</a></li>
+    <li><a href="http://localhost/solution/jiazhuang/">家庭装修</a></li>
 
   
 
 </ul><ul id="dropmenu4" class="dropMenu">
+
+    <li><a href="http://localhost/cases/gongzhuang/">工装案例</a></li>
+
+    <li><a href="http://localhost/cases/jiazhuang/">家装案例</a></li>
 
   
 

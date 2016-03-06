@@ -65,7 +65,7 @@ header .headmain nav li a:hover{background:#1E8CDA; color:#fff;}
 #banner .banwrapper li img{width:1920px; height:766px; position:absolute; left:50%; top:50%; margin-top:-383px; margin-left:-960px;}
 #banner .banwrapper li .setanima{position:absolute; height:100%;left:50%; margin-left:-500px;}
 #banner .banwrapper li .setanima .tit{background:#1E8CDA; width:978px; position:relative; height:83px; color:#fff; font-size:48px; font-weight:bold; text-align:right; text-indent:2em; margin-top:217px; margin-left:-455px;}
-#banner .banwrapper li .setanima .ctit{background:#1d2c36; width:607px; height:70px; color:#fff; font-size:28px; font-weight:bold; text-align:right;  line-height:60px; margin-top:12px;}
+#banner .banwrapper li .setanima .ctit{background:#1d2c36; width:607px; height:50px; color:#fff; font-size:20px; font-weight:bold; text-align:right;  line-height:50px; margin-top:12px;}
 #banner .banwrapper li .setanima .more{width:204px; height:50px; background:#f86c0f; border-radius:4px; margin-top:20px; text-align:center; line-height:50px; color:#fff; font-size:26px; font-weight:bold; display:block; box-shadow:0px 5px 1px #8c3800;}
 /*banc*/
 #banner .bancotr{ width: 320px; height: 160px;position: absolute; bottom: 0; left: 50%; margin-left: -160px;z-index: 6px;overflow:hidden;}
@@ -191,7 +191,7 @@ font-size: 0;}
 #submen ul li a:hover{border-bottom: 1px solid #fff;}
 #submen ul li.hover a{border-bottom: 1px solid #fff;}
 
- #boutus{ height: 604px;  width: 100%; background: url(../images/ab_bg1.jpg) center bottom no-repeat; overflow: hidden;}
+ #boutus{ height: 654px;  width: 100%; background: url(../images/ab_bg1.jpg) center bottom no-repeat; overflow: hidden;}
  #boutus .tit{color: #1E8CDA; font-size: 48px; font-weight: bold; line-height: 1; margin-top: 70px;}
  #boutus .tit i{font-size: 24px; margin-left: 30px;}
  #boutus .tit div{margin:8px 0 0 50px; font-size: 30px; color: #2e383f;}
@@ -199,11 +199,11 @@ font-size: 0;}
  #boutus .fl{width: 350px; font-size: 13px; color:#666666; margin:0 0 0 60px; font-family: 'SimSun'; text-align: justify;}
   #boutus .fr{width:550px;height:390px; overflow:hidden;}
   #boutus .fr img{width:550px;}
- #philosophy{width: 100%; height:854px; background: url(../images/ab_bg2.jpg) center bottom no-repeat; overflow: hidden;padding-top:100px;  }
+ #philosophy{width: 100%; height:854px; background: url(../images/ab_bg2.jpg) center bottom no-repeat; overflow: hidden;  }
  #philosophy .ent{color:#1E8CDA; font-size:40px; margin-left:354px; line-height:1; margin-top:10px; }
  #philosophy .endsp{color:#1E8CDA; font-size:40px; margin-left:354px; color:#fefefe; font-size:14px;width:416px; line-height:1.5; margin-top:10px; font-family:'arial';}
- #philosophy h2{color: #fff; font-size: 60px; line-height: 1; margin-top: 103px; margin-left: 258px; text-align: left;}
- #philosophy h2 i{font-size: 48px;}
+ #philosophy h2{color: #fff; font-size: 60px; line-height: 1; margin-top: 55px; margin-left: 258px; text-align: left;}
+ #philosophy h2 i{font-size: 40px;}
  #philosophy ul{margin-top: 40px; margin-top: 152px; margin-left: 10px;}
  #philosophy li{width: 269px; height: 317px; float: left;margin-right: 80px;}
  #philosophy li:nth-child(1){background: url(../images/ab_li1.png);}
@@ -212,8 +212,9 @@ font-size: 0;}
  #philosophy li div{text-align: center;  color: #2e383f; font-weight: bold; font-size: 18px; }
  #philosophy li .titdesp{font-weight:normal; font-family:'SimSun'; font-size:14px; }
 #philosophy li .tit{margin-top: 217px;}
-#teamStyle{width:100%; height:980px; background:#5c5c5c url(../images/ab_bg3.jpg) center bottom no-repeat; overflow:hidden; padding-top:100px;}
-#teamStyle h2{color:#1E8CDA; font-size:48px; margin-top:55px; line-height:1;text-align:left; margin-left:350px; height:48px;}
+#teamStyle{width:100%; height:780px; background:#5c5c5c url(../images/ab_bg3.jpg) center bottom no-repeat; overflow:hidden;}
+#teamStyle h2{color:#1E8CDA; font-size:60px; margin-top:55px; line-height:1;text-align:left; margin-left:350px; height:48px;}
+#teamStyle h2 i{font-size: 40px;}
 #teamStyle .ent{color:#ededed; font-size:40px; margin-left:254px; line-height:1; margin-top:12px; font-weight:normal; }
 #teamStyle .endsp{ font-size:40px; margin-left:354px; color:#d1d1d1; font-size:14px;width:416px; line-height:1.5; margin-top:10px; font-family:'arial';}
 #teamcontainer{width:1000px; margin:0px auto; margin-top:50px; height:600px; overflow:hidden; }
@@ -225,15 +226,18 @@ font-size: 0;}
 .c_1{width:190px;  height:190px; }
 .c_2{width:390px;  height:190px; }
 .c_3{width:190px;  height:390px; }
-.c_4{width:390px;  height:390px; }
+/*.c_4{width:390px;  height:390px; }*/
+.c_4{width:580px;  height:390px; }
 
 
 .item img{background:url("../../images/efox/loding.gif") no-repeat center center ; width:100%; height:100%; }	
 #zuzhigoujia {width:100%; min-width:1000px; background:url(../images/ab_bg4.jpg) center center no-repeat; height:826px;}
 #process{width:100%; height:550px; background:url(../images/ab_bg5.jpg) no-repeat;}
-#harvest{width:100%; height:500px; background:url(../images/ab_ry.jpg) center bottom no-repeat; overflow:hidden; margin-top:40px;}
-#harvest .endsp{ font-size:40px; margin-left:191px; color:#838282; font-size:14px;width:416px; line-height:1.5; margin-top:10px; font-family:'arial';}
-#harvest h2{color:#1E8CDA; font-size:44px; text-align:left; line-height:1; margin:-2px 0 0 100px;}
+#harvest{width:100%; height:650px; background:url(../images/ab_ry.jpg) center bottom no-repeat; overflow:hidden;}
+#harvest .ent{color:#ededed; font-size:40px; margin-left:204px; line-height:1; margin-top:12px; font-weight:normal; }
+#harvest .endsp{ font-size:40px; margin-left:291px; color:#838282; font-size:14px;width:416px; line-height:1.5; margin-top:10px; font-family:'arial';}
+#harvest h2{color:#1E8CDA; font-size:60px;text-align:left; line-height:1; margin:55px 0 0 100px;}
+#harvest h2 i{font-size: 40px;}
 .zhengshu{margin-top:25px;}
 /*内页about页面header*/
 header.aboutheader{position:fixed;z-index:2222; top:0; width:100%;}
