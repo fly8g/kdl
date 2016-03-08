@@ -1,0 +1,2 @@
+INSERT INTO `dede_addon17` VALUES('181','10','','','58.214.182.76','http://www.yxask.cn/');
+INSERT INTO `dede_addon17` VALUES('239','10','','','58.214.181.134','http://www.yxask.cn/');
