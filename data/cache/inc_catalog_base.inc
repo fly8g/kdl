@@ -24,7 +24,14 @@ $cfg_Cs[26]=array(0,1,1,'6IGU57O75oiR5Lus');
 $cfg_Cs[28]=array(0,1,1,'57uP6ZSA5Yqg55uf');
 $cfg_Cs[31]=array(30,1,1,'5bel56iL6KOF5L+u');
 $cfg_Cs[30]=array(0,1,1,'5bqU55So6aKG5Z+f');
+$cfg_Cs[40]=array(39,1,1,'6IGU57O75oiR5Lus');
+$cfg_Cs[41]=array(39,1,1,'5Yqg5YWl5oiR5Lus');
 $cfg_Cs[32]=array(30,1,1,'5a625bqt6KOF5L+u');
 $cfg_Cs[33]=array(4,1,1,'5bel6KOF5qGI5L6L');
 $cfg_Cs[34]=array(4,1,1,'5a626KOF5qGI5L6L');
+$cfg_Cs[35]=array(0,1,1,'5Lqn5ZOB5Lit5b+D');
+$cfg_Cs[36]=array(35,1,1,'546v5L+d5p2Q5paZ');
+$cfg_Cs[37]=array(35,1,1,'5bel6Im65qCH5YeG');
+$cfg_Cs[38]=array(35,1,1,'5pa95bel566h55CG');
+$cfg_Cs[39]=array(0,1,1,'5a6i5oi35pyN5Yqh');
 ?>

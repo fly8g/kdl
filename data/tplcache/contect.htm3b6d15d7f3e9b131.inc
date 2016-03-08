@@ -14,7 +14,7 @@ $z[5]=Array("include","",976,1012);
 $z[5][4]['filename']="head2.htm";
 $z[6]=Array("field","",1086,1107);
 $z[6][4]['name']="content";
-$z[7]=Array("include","",1514,1551);
+$z[7]=Array("include","",1532,1569);
 $z[7][4]['filename']="footer.htm";
 
 ?>

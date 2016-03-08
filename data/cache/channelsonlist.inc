@@ -2,17 +2,13 @@
 
   
 
-</ul><ul id="dropmenu2" class="dropMenu">
+</ul><ul id="dropmenu35" class="dropMenu">
 
-    <li><a href="http://localhost/a/zhuangshiban/">装饰板</a></li>
+    <li><a href="http://localhost/product_center/huanbaocailiao/">环保材料</a></li>
 
-    <li><a href="http://localhost/a/jinshuzhuangshixiantiao/">金属装饰线条</a></li>
+    <li><a href="http://localhost/product_center/gongyibiaozhun/">工艺标准</a></li>
 
-    <li><a href="http://localhost/a/jinshuzhuangshiban/">金属装饰板</a></li>
-
-    <li><a href="http://localhost/a/zhiganzhuangshishajiang/">质感装饰砂浆</a></li>
-
-    <li><a href="http://localhost/a/ganhunshajiang/">干混砂浆</a></li>
+    <li><a href="http://localhost/product_center/shigongguanli/">施工管理</a></li>
 
   
 
@@ -40,7 +36,11 @@
 
   
 
-</ul><ul id="dropmenu6" class="dropMenu">
+</ul><ul id="dropmenu39" class="dropMenu">
+
+    <li><a href="http://localhost/contract_us/">联系我们</a></li>
+
+    <li><a href="http://localhost/join_us/">加入我们</a></li>
 
   
 

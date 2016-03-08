@@ -45,10 +45,10 @@
 					<li><a href='http://localhost/about/' >关于我们</a>
 					</li>
 
-					<li><a href='http://localhost/product/'  rel='dropmenu2'>产品中心</a>
+					<li><a href='http://localhost/product_center/'  rel='dropmenu35'>产品中心</a>
 					</li>
 
-					<li><a href='http://localhost/solution/'  rel='dropmenu30'>应用领域</a>
+					<li><a href='http://localhost/#/'  rel='dropmenu30'>应用领域</a>
 					</li>
 
 					<li><a href='http://localhost/cases/'  rel='dropmenu4'>精彩案例</a>
@@ -57,7 +57,7 @@
 					<li><a href='http://localhost/news/'  rel='dropmenu5'>资讯中心</a>
 					</li>
 
-					<li><a href='http://localhost/join/' >人力资源</a>
+					<li><a href='http://localhost/#/'  rel='dropmenu39'>客户服务</a>
 					</li>
 
 				</ul>
@@ -72,15 +72,15 @@
 
 <li><a href='http://localhost/about/' ><span class='bg_left'>关于我们</span></a></li>
 
-<li><a href='http://localhost/product/'  rel='dropmenu2'><span class='bg_left'>产品中心</span></a></li>
+<li><a href='http://localhost/product_center/'  rel='dropmenu35'><span class='bg_left'>产品中心</span></a></li>
 
-<li><a href='http://localhost/solution/'  rel='dropmenu30'><span class='bg_left'>应用领域</span></a></li>
+<li><a href='http://localhost/#/'  rel='dropmenu30'><span class='bg_left'>应用领域</span></a></li>
 
 <li><a href='http://localhost/cases/'  rel='dropmenu4'><span class='bg_left'>精彩案例</span></a></li>
 
 <li><a href='http://localhost/news/'  rel='dropmenu5'><span class='bg_left'>资讯中心</span></a></li>
 
-<li><a href='http://localhost/join/' ><span class='bg_left'>人力资源</span></a></li>
+<li><a href='http://localhost/#/'  rel='dropmenu39'><span class='bg_left'>客户服务</span></a></li>
 
 </ul>
 <div>
@@ -111,7 +111,7 @@ window.HUABAN_PRESETTINGS = { autoInitialize: false };</script><script charset="
  </ul>
 </section>
 <section class="wp contweizhi">
-<b></b>成都大395号
+<b></b>西安市经开区未央路117号
 </section>
 <section class="mapinside wp" >
 	<div id="map" style="width:100%; height:100%;"></div>
@@ -125,17 +125,13 @@ window.HUABAN_PRESETTINGS = { autoInitialize: false };</script><script charset="
 
   
 
-</ul><ul id="dropmenu2" class="dropMenu">
+</ul><ul id="dropmenu35" class="dropMenu">
 
-    <li><a href="http://localhost/a/zhuangshiban/">装饰板</a></li>
+    <li><a href="http://localhost/product_center/huanbaocailiao/">环保材料</a></li>
 
-    <li><a href="http://localhost/a/jinshuzhuangshixiantiao/">金属装饰线条</a></li>
+    <li><a href="http://localhost/product_center/gongyibiaozhun/">工艺标准</a></li>
 
-    <li><a href="http://localhost/a/jinshuzhuangshiban/">金属装饰板</a></li>
-
-    <li><a href="http://localhost/a/zhiganzhuangshishajiang/">质感装饰砂浆</a></li>
-
-    <li><a href="http://localhost/a/ganhunshajiang/">干混砂浆</a></li>
+    <li><a href="http://localhost/product_center/shigongguanli/">施工管理</a></li>
 
   
 
@@ -163,7 +159,11 @@ window.HUABAN_PRESETTINGS = { autoInitialize: false };</script><script charset="
 
   
 
-</ul><ul id="dropmenu6" class="dropMenu">
+</ul><ul id="dropmenu39" class="dropMenu">
+
+    <li><a href="http://localhost/contract_us/">联系我们</a></li>
+
+    <li><a href="http://localhost/join_us/">加入我们</a></li>
 
   
 
@@ -200,9 +200,9 @@ window.HUABAN_PRESETTINGS = { autoInitialize: false };</script><script charset="
           
 <li><a href='http://localhost/about/'>关于我们</a> </li>
                 
-<li><a href='http://localhost/product/'>产品中心</a> </li>
+<li><a href='http://localhost/product_center/'>产品中心</a> </li>
                 
-<li><a href='http://localhost/solution/'>应用领域</a> </li>
+<li><a href='http://localhost/#/'>应用领域</a> </li>
                 
 <li><a href='http://localhost/cases/'>精彩案例</a> </li>
                 
@@ -255,12 +255,13 @@ $("nav li").hover(function(){
 <script type="text/javascript">
 //获取地图位置
 	var map;
-	var ruifox = '<span style="font-weight:bold">建设工程有限公司</span><br/><span>地址：业大道孟湾东路</span>'
+	var ruifox = '<span style="font-weight:bold">陕西凯德隆装饰工程有限公司</span><br/><span>地址：西安市经开区未央路117号</span>'
 	function initialize() {
-		var myLatlng = new google.maps.LatLng(30.588742,103.549316);
+		var myLatlng = new google.maps.LatLng(34.3159539,108.9481708);
+		
 		var myOptions = {
 		 	zoom: 15,
-			center: new google.maps.LatLng(30.588742,103.549316),
+			center: new google.maps.LatLng(34.3159539,108.9481708),
 			scrollwheel: true,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}
@@ -272,7 +273,7 @@ $("nav li").hover(function(){
 		var marker = new google.maps.Marker({
 			position: myLatlng, 
 			map: map, 
-			title:"建设工程有限公司"
+			title:"陕西凯德隆装饰工程有限公司"
 		});
 		infowindow.open(map,marker);
 		google.maps.event.addListener(marker, 'click', function() {

@@ -35,7 +35,7 @@
  </ul>
 </section>
 <section class="wp contweizhi">
-<b></b>成都大395号
+<b></b>西安市经开区未央路117号
 </section>
 <section class="mapinside wp" >
 	<div id="map" style="width:100%; height:100%;"></div>
@@ -78,12 +78,13 @@ $("nav li").hover(function(){
 <script type="text/javascript">
 //获取地图位置
 	var map;
-	var ruifox = '<span style="font-weight:bold">建设工程有限公司</span><br/><span>地址：业大道孟湾东路</span>'
+	var ruifox = '<span style="font-weight:bold">陕西凯德隆装饰工程有限公司</span><br/><span>地址：西安市经开区未央路117号</span>'
 	function initialize() {
-		var myLatlng = new google.maps.LatLng(30.588742,103.549316);
+		var myLatlng = new google.maps.LatLng(34.3159539,108.9481708);
+		
 		var myOptions = {
 		 	zoom: 15,
-			center: new google.maps.LatLng(30.588742,103.549316),
+			center: new google.maps.LatLng(34.3159539,108.9481708),
 			scrollwheel: true,
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		}
@@ -95,7 +96,7 @@ $("nav li").hover(function(){
 		var marker = new google.maps.Marker({
 			position: myLatlng, 
 			map: map, 
-			title:"建设工程有限公司"
+			title:"陕西凯德隆装饰工程有限公司"
 		});
 		infowindow.open(map,marker);
 		google.maps.event.addListener(marker, 'click', function() {
