@@ -608,7 +608,7 @@ label.checked em{background:url(../images/lable_check.png) no-repeat; border:1px
 /*5-22*/
 #products {width:100%; height:406px; background:url(../images/prInd.jpg) center center no-repeat; overflow:hidden;}
 #products ul {margin-top:60px; margin-bottom:70px; margin-left:76px;}
-#products ul li{float:left;margin-right:57px;text-align:center; font-size:18px; color:#1d2c36; opacity:0;}
+#products ul li{float:left;margin-right:57px;text-align:center; font-size:14px; color:#777; opacity:0;}
 #products ul li:nth-child(5){margin-right:0;}
 #products ul li a{width:126px; height:126px; display:block; background:#69b2e7; border-radius:50%;
 -webkit-transition: -webkit-transform 0.2s, background 0.2s;
